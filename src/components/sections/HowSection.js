@@ -12,7 +12,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults,
 };
 
-const FeaturesSplit = ({
+const HowSection = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -49,9 +49,9 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "About",
-    paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    title: "How ?",
+    // paragraph:
+    //   "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
   };
 
   return (
@@ -60,7 +60,7 @@ const FeaturesSplit = ({
         <div className={innerClasses}>
           <SectionHeader
             data={sectionHeader}
-            id="about"
+            id="how"
             className="center-content"
           />
           <div className={splitClasses}>
@@ -152,7 +152,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/features-split-image-03.png")}
+                  src={require("./../../assets/images/how/IPFS.png")}
                   alt="Features split 03"
                   width={528}
                   height={396}
@@ -166,7 +166,7 @@ const FeaturesSplit = ({
   );
 };
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+HowSection.propTypes = propTypes;
+HowSection.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default HowSection;

@@ -11,7 +11,7 @@ const propTypes = {
 const defaultProps = {
   ...SectionTilesProps.defaults,
 };
-const FeaturesTiles = ({
+const WhySection = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -44,15 +44,22 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: "Why ?",
+    paragraph: "Our purpouse, cause and beliefs",
   };
 
   return (
     <section {...props} className={outerClasses} id="why">
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <SectionHeader
+            id="header-why"
+            data={sectionHeader}
+            className="center-content"
+          />
+          <h3 className=" center-content text-color-secondary reveal-from-bottom ">
+            <div className="h-why">Platform</div>
+          </h3>
           <div className={tilesClasses}>
-            {/** first item */}
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -76,7 +83,6 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
-
             <div
               className="tiles-item reveal-from-bottom"
               data-reveal-delay="200"
@@ -102,7 +108,6 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
-
             <div
               className="tiles-item reveal-from-bottom"
               data-reveal-delay="400"
@@ -128,7 +133,11 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
-
+          </div>
+          <h3 className="  center-content text-color-tertiary bold h-why reveal-from-bottom">
+            Editorial
+          </h3>
+          <div className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -151,7 +160,6 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
-
             <div
               className="tiles-item reveal-from-bottom"
               data-reveal-delay="200"
@@ -177,7 +185,6 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
-
             <div
               className="tiles-item reveal-from-bottom"
               data-reveal-delay="400"
@@ -210,7 +217,7 @@ const FeaturesTiles = ({
   );
 };
 
-FeaturesTiles.propTypes = propTypes;
-FeaturesTiles.defaultProps = defaultProps;
+WhySection.propTypes = propTypes;
+WhySection.defaultProps = defaultProps;
 
-export default FeaturesTiles;
+export default WhySection;

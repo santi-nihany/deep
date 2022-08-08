@@ -119,7 +119,7 @@ const Hero = ({
                   className="m-0 mb-32 reveal-from-bottom"
                   data-reveal-delay="400"
                 >
-                  Our mission is to decentralize de access to books while
+                  Our mission is to decentralize the access to books while
                   democratizing the habit of reading
                 </p>
                 <div className=" reveal-from-bottom" data-reveal-delay="600">

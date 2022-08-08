@@ -1,9 +1,9 @@
 import React from "react";
 // import sections
 import Hero from "../components/sections/Hero";
-import FeaturesTiles from "../components/sections/FeaturesTiles";
-import FeaturesSplit from "../components/sections/FeaturesSplit";
-import Testimonial from "../components/sections/Testimonial";
+import WhySection from "../components/sections/WhySection";
+import HowSection from "../components/sections/HowSection";
+import WhatSection from "../components/sections/WhatSection";
 import Cta from "../components/sections/Cta";
 import About from "../components/sections/About";
 
@@ -11,14 +11,14 @@ const Home = () => {
   return (
     <>
       <Hero className="illustration-section-01" />
-      <FeaturesTiles />
-      <FeaturesSplit
+      <WhySection />
+      <HowSection
         invertMobile
         topDivider
         imageFill
         className="illustration-section-02"
       />
-      <Testimonial topDivider />
+      <WhatSection topDivider />
       <About />
       <Cta split />
     </>
