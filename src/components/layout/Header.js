@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
+import { useMediaQuery } from "react-responsive";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -47,7 +48,7 @@ const Header = ({
 
   const openMenu = () => {
     document.body.classList.add("off-nav-is-active");
-    nav.current.style.maxHeight = nav.current.scrollHeight + "px";
+    //nav.current.style.maxHeight = nav.current.scrollHeight + "px";
     setIsactive(true);
   };
 
@@ -77,62 +78,91 @@ const Header = ({
     bottomOuterDivider && "has-bottom-divider",
     className
   );
+  const isMobile = useMediaQuery({
+    query: "(max-width: 900px)",
+  });
 
   return (
     <header {...props} className={classes}>
-      <div className=" nav-bar">
-        <div className={classNames("site-header-inner ")}>
-          {!hideNav && (
-            <>
-              <button
-                ref={hamburger}
-                className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
-              >
-                <span className="screen-reader">Menu</span>
-                <span className="hamburger">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
-              <Logo />
-              <nav
-                ref={nav}
-                className={classNames("header-nav", isActive && "is-active")}
-              >
-                <div className="header-nav-inner ">
-                  <ul
-                    className={classNames(
-                      "list-reset text-xs",
-                      navPosition && `header-nav-${navPosition}`
-                    )}
-                  >
-                    <li>
-                      <Link to="#why" onClick={closeMenu}>
-                        Why
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#how" onClick={closeMenu}>
-                        How
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#what" onClick={closeMenu}>
-                        What
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#0" onClick={closeMenu}>
-                        About us
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </>
-          )}
+      {isMobile ? (
+        <div className="mob-header">
+          <nav className="navBar">
+            <button
+              ref={hamburger}
+              id="hamburger-butt"
+              className="header-nav-toggle "
+              onClick={isActive ? closeMenu : openMenu}
+            >
+              <span className="screen-reader">Menu</span>
+              <span className="hamburger">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
+            {isActive && (
+              <ul id="hamb-list">
+                <li>
+                  <Link>Why</Link>
+                </li>
+                <li>
+                  <Link>How</Link>
+                </li>
+                <li>
+                  <Link>What</Link>
+                </li>
+                <li>
+                  <Link>About</Link>
+                </li>
+              </ul>
+            )}
+          </nav>
+
+          <Logo id="logo-mobile" />
         </div>
-      </div>
+      ) : (
+        <div className=" nav-bar">
+          <div className={classNames("site-header-inner ")}>
+            {!hideNav && (
+              <>
+                <Logo />
+                <nav
+                  ref={nav}
+                  className={classNames("header-nav", isActive && "is-active")}
+                >
+                  <div className="header-nav-inner ">
+                    <ul
+                      className={classNames(
+                        "list-reset text-xs",
+                        navPosition && `header-nav-${navPosition}`
+                      )}
+                    >
+                      <li>
+                        <Link to="#why" onClick={closeMenu}>
+                          Why
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#how" onClick={closeMenu}>
+                          How
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#what" onClick={closeMenu}>
+                          What
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="#0" onClick={closeMenu}>
+                          About us
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </header>
   );
 };

@@ -5,15 +5,11 @@ import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
-import { bounce, fadeInLeft, fadeInRight } from "react-animations";
+import { fadeInLeft, fadeInRight } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import "@fontsource/montserrat";
 
 const styles = {
-  bounce: {
-    animation: "x 4s",
-    animationName: Radium.keyframes(bounce, "bounce"),
-  },
   fadeInLeft: {
     animation: "x 3s",
     animationName: Radium.keyframes(fadeInLeft, "fadeInLeft"),

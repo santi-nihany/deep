@@ -23,3 +23,43 @@ p{
     justify-content: center !important;
 }
 
+.mob-header{
+    display: flex;
+    justify-content: space-between;
+}
+#hamburger-butt{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+#logo-mobile{
+    margin-top: 1rem;
+}
+
+#hamb-list{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.8rem;
+    display: flex;
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+
+#hamb-list li{
+    padding-right: 40px;
+}
+
+@media (max-width: 364px) {
+    #hamb-list{
+        margin-left:0
+    }
+    #hamb-list li{
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 328px) {
+    #hamb-list li{
+        padding-right: 20px;
+    }
+}
