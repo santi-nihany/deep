@@ -1,7 +1,7 @@
 body,p,h1,h2,h3,body,section,span{
     font-family: 'Montserrat',sans-serif !important;
 }
-
+/*Landing*/
 .title{
     font-weight: 900 !important;
 }
@@ -17,6 +17,8 @@ p{
     font-weight:500 ;
 
 }
+
+/*Header */
 
 .nav-bar{
     display: flex;
@@ -62,4 +64,20 @@ p{
     #hamb-list li{
         padding-right: 20px;
     }
+}
+
+/* About*/
+#profiles{
+    display: flex;
+    margin-top:-1rem;
+}
+
+.profile{
+    padding:1rem;
+    padding-bottom: 2rem;
+}
+
+.profile p{
+    margin-top:1rem;
+
 }

@@ -101,16 +101,24 @@ const Header = ({
             {isActive && (
               <ul id="hamb-list">
                 <li>
-                  <Link>Why</Link>
+                  <Link to="#why" onClick={closeMenu}>
+                    Why
+                  </Link>
                 </li>
                 <li>
-                  <Link>How</Link>
+                  <Link to="#how" onClick={closeMenu}>
+                    How
+                  </Link>
                 </li>
                 <li>
-                  <Link>What</Link>
+                  <Link to="#what" onClick={closeMenu}>
+                    What
+                  </Link>
                 </li>
                 <li>
-                  <Link>About</Link>
+                  <Link to="#team" onClick={closeMenu}>
+                    Team
+                  </Link>
                 </li>
               </ul>
             )}
@@ -151,8 +159,8 @@ const Header = ({
                         </Link>
                       </li>
                       <li>
-                        <Link to="#0" onClick={closeMenu}>
-                          About us
+                        <Link to="#team" onClick={closeMenu}>
+                          Team
                         </Link>
                       </li>
                     </ul>
