@@ -42,7 +42,7 @@ const HowSection = ({
   const sectionHeader = {
     title: "How ?",
     paragraph:
-      "Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.",
+      "Blockchain help us solve many problems such as trust, transparency, security and reliability of data processing.",
   };
 
   return (
@@ -56,26 +56,27 @@ const HowSection = ({
               data-reveal-delay="200"
             >
               <div className="tiles-item-inner">
-                <div className="center-content">Deep Platform</div>
+                <div className="center-content">Decentralized governance</div>
                 <div className="testimonial-item-footer text-xs mt-8 mb-0 has-top-divider"></div>
                 <p className="text-sm mb-0">
-                  — Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum cillum dolore eu fugiat.
+                  — We want our platform to function as a expression of what the
+                  community of readers needs. That mission will succeed thanks
+                  to blockchain. Forming a DAO, the reader’s will choose what is
+                  best for the platform.
                 </p>
               </div>
             </div>
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
-                <div className="center-content">Deep Platform</div>
+                <div className="center-content">Decentralized storage</div>
                 <div className="testimonial-item-footer text-xs mt-8 mb-0 has-top-divider"></div>
                 <p className="text-sm mb-0">
-                  — Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum cillum dolore eu fugiat.
+                  — For our data to be secured and not controlled by any
+                  institution, we believe in decentralization. With Deep, you
+                  will have the opportunity to register your reading journey
+                  throughout your life. Every document you upload to the
+                  platform is going to be stored in a decentralized way.
                 </p>
               </div>
             </div>
@@ -85,13 +86,12 @@ const HowSection = ({
               data-reveal-delay="200"
             >
               <div className="tiles-item-inner">
-                <div className="center-content">Deep Platform</div>
+                <div className="center-content">Decentralized funding</div>
                 <div className="testimonial-item-footer text-xs mt-8 mb-0 has-top-divider"></div>
                 <p className="text-sm mb-0">
-                  — Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum cillum dolore eu fugiat.
+                  — As a DAO, we will give the opportunity to readers to vote
+                  for their favorite authors in a decentralized environment. We
+                  don’t care about your nationality, name or genre.{" "}
                 </p>
               </div>
             </div>

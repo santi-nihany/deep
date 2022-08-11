@@ -95,7 +95,14 @@ const Hero = ({
                           Decentralized Editorial
                         </span>
                       </h3>
-                      <p class="m-0">Paragraph</p>
+                      <p class="m-0">
+                        One page, one NFT. A new way to support emerging
+                        writers. We want every author to have the opportunity to
+                        publish their books, in the traditional system there are
+                        a lot of people who are left behind. This is where the
+                        power of decentralization appears. Crowdfunding,
+                        communities, NFTs and a lot more coming soon with Deep.
+                      </p>
                     </div>
                   </div>
                 </div>
