@@ -39,6 +39,7 @@ const Header = ({
     isActive && openMenu();
     document.addEventListener("keydown", keyPress);
     document.addEventListener("click", clickOutside);
+
     return () => {
       document.removeEventListener("keydown", keyPress);
       document.removeEventListener("click", clickOutside);

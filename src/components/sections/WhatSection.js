@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import { useMediaQuery } from "react-responsive";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -53,6 +54,10 @@ const WhatSection = ({
     paragraph: "Ideas to reality",
   };
 
+  const isMobile = useMediaQuery({
+    query: "(max-width: 900px)",
+  });
+
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
@@ -92,6 +97,8 @@ const WhatSection = ({
                   id="brain"
                   src={require("./../../assets/images/what/brain_2.png")}
                   alt="Features split 01"
+                  width={528}
+                  height={396}
                 />
               </div>
             </div>
