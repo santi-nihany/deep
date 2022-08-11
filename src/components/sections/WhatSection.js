@@ -79,9 +79,10 @@ const WhatSection = ({
                 <h3 className="mt-0 mb-12">Chapitas</h3>
                 <p className="m-0 p-what">
                   We want you to register your learnings in a secure, trustful
-                  and transparent way. That’s why we bring the e-certificates.
-                  Your essays, projects, code or any document will serve you as
-                  a portfolio for your future. Knowledge comes from learning,
+                  and transparent way. That’s why we bring{" "}
+                  <span className="text-color-primary">chapitas</span>. Your
+                  essays, projects, code or any document will serve you as a
+                  portfolio for your future. Knowledge comes from learning,
                   wisdom comes from applying.
                 </p>
               </div>

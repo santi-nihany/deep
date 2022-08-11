@@ -142,12 +142,11 @@ const WhySection = ({
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="icon-why">
                     <Image
-                      src={require("./../../assets/images/feature-tile-icon-04.svg")}
+                      src={require("./../../assets/images/why/editorial/dec.png")}
                       alt="Features tile icon 04"
-                      width={64}
-                      height={64}
+                      width="50%"
                     />
                   </div>
                 </div>
@@ -170,12 +169,12 @@ const WhySection = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="icon-why">
                     <Image
-                      src={require("./../../assets/images/feature-tile-icon-05.svg")}
-                      alt="Features tile icon 05"
-                      width={64}
-                      height={64}
+                      id="authors"
+                      src={require("./../../assets/images/why/editorial/authors.png")}
+                      alt="Features tile icon 04"
+                      width="42%"
                     />
                   </div>
                 </div>
@@ -197,10 +196,11 @@ const WhySection = ({
             >
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
-                  <div className="features-tiles-item-image mb-16">
+                  <div className="icon-why">
                     <Image
-                      src={require("./../../assets/images/feature-tile-icon-06.svg")}
-                      alt="Features tile icon 06"
+                      src={require("./../../assets/images/why/editorial/readers.png")}
+                      alt="Features tile icon 04"
+                      width="55%"
                     />
                   </div>
                 </div>

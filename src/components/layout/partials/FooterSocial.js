@@ -40,7 +40,7 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/">
+          <a href="https://twitter.com/deep_ecosystem">
             <svg
               width="16"
               height="16"
