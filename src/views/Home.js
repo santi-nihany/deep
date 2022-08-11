@@ -4,7 +4,6 @@ import Hero from "../components/sections/Hero";
 import WhySection from "../components/sections/WhySection";
 import HowSection from "../components/sections/HowSection";
 import WhatSection from "../components/sections/WhatSection";
-import Cta from "../components/sections/Cta";
 import About from "../components/sections/About";
 
 const Home = () => {
@@ -12,15 +11,14 @@ const Home = () => {
     <>
       <Hero className="illustration-section-01" />
       <WhySection />
-      <HowSection
+      <HowSection topDivider />
+      <WhatSection
         invertMobile
         topDivider
         imageFill
         className="illustration-section-02"
       />
-      <WhatSection topDivider />
       <About />
-      <Cta split />
     </>
   );
 };

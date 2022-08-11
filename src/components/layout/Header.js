@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
 import { useMediaQuery } from "react-responsive";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -72,12 +72,12 @@ const Header = ({
       return;
     closeMenu();
   };
-
   const classes = classNames(
     "site-header",
     bottomOuterDivider && "has-bottom-divider",
     className
   );
+
   const isMobile = useMediaQuery({
     query: "(max-width: 900px)",
   });
@@ -101,22 +101,50 @@ const Header = ({
             {isActive && (
               <ul id="hamb-list">
                 <li>
-                  <Link to="#why" onClick={closeMenu}>
+                  <Link
+                    activeClass="active"
+                    to="why"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={closeMenu}
+                  >
                     Why
                   </Link>
                 </li>
                 <li>
-                  <Link to="#how" onClick={closeMenu}>
+                  <Link
+                    activeClass="active"
+                    to="how"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={closeMenu}
+                  >
                     How
                   </Link>
                 </li>
                 <li>
-                  <Link to="#what" onClick={closeMenu}>
+                  <Link
+                    activeClass="active"
+                    to="what"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={closeMenu}
+                  >
                     What
                   </Link>
                 </li>
                 <li>
-                  <Link to="#team" onClick={closeMenu}>
+                  <Link
+                    activeClass="active"
+                    to="team"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={closeMenu}
+                  >
                     Team
                   </Link>
                 </li>
@@ -144,22 +172,50 @@ const Header = ({
                       )}
                     >
                       <li>
-                        <Link to="#why" onClick={closeMenu}>
+                        <Link
+                          activeClass="active"
+                          to="why"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeMenu}
+                        >
                           Why
                         </Link>
                       </li>
                       <li>
-                        <Link to="#how" onClick={closeMenu}>
+                        <Link
+                          activeClass="active"
+                          to="how"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeMenu}
+                        >
                           How
                         </Link>
                       </li>
                       <li>
-                        <Link to="#what" onClick={closeMenu}>
+                        <Link
+                          activeClass="active"
+                          to="what"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeMenu}
+                        >
                           What
                         </Link>
                       </li>
                       <li>
-                        <Link to="#team" onClick={closeMenu}>
+                        <Link
+                          activeClass="active"
+                          to="team"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeMenu}
+                        >
                           Team
                         </Link>
                       </li>
