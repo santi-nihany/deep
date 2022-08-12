@@ -154,11 +154,10 @@ const WhySection = ({
                   <h4 className="mt-0 mb-8">Breaking Centralization</h4>
                   <p className="m-0 text-sm">
                     Nowadays, there exists 3 ways of publishing a book: throught
-                    a traditional editorial, co-editing or autopublishing by
+                    a traditional editorial, co-editing or autopublishing
                     yourself. We know that the process of coming out with a book
-                    is hard. Not only is the fact of design it, correcting it,
-                    laying it out, printing it, promoting it and selling it, but
-                    also the high cost all of this takes.
+                    is hard. Not only is the fact of design it, printing it and
+                    selling it, but also the high cost all of this takes.
                   </p>
                 </div>
               </div>
@@ -181,11 +180,11 @@ const WhySection = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Authors</h4>
                   <p className="m-0 text-sm">
-                    Of all the proposes that enter to an editorial, less than
-                    the 10% are published. This is because of the comercial
-                    vision of those organizations and the fact that they can’t
-                    edit every book that is presented. That is why so many
-                    authors are left behind.
+                    Of all the proposes that enter to a publisher, less than the
+                    10% are published. This is because of the comercial vision
+                    of those organizations and the fact that they can’t edit
+                    every book that is presented. That is why so many authors
+                    are left behind.
                   </p>
                 </div>
               </div>
@@ -208,8 +207,8 @@ const WhySection = ({
                   <h4 className="mt-0 mb-8">Readers</h4>
                   <p className="m-0 text-sm">
                     Nobody ask readers what they want to read or give them the
-                    chance to have a vote on the edition of the books of their
-                    favourite authors. Reader community has a lot to offer while
+                    chance to have a vote on the edition of their favourite
+                    authors books. Reader community has a lot to offer while
                     proactively participating in the process of publication of a
                     book. We want that special value to be part of the decision.
                   </p>

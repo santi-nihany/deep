@@ -3,7 +3,6 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
-import { useMediaQuery } from "react-responsive";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -54,10 +53,6 @@ const WhatSection = ({
     paragraph: "Ideas to reality",
   };
 
-  const isMobile = useMediaQuery({
-    query: "(max-width: 900px)",
-  });
-
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
@@ -78,12 +73,12 @@ const WhatSection = ({
                 </div>
                 <h3 className="mt-0 mb-12">Chapitas</h3>
                 <p className="m-0 p-what">
-                  We want you to register your learnings in a secure, trustful
-                  and transparent way. That’s why we bring{" "}
+                  We want you to register your learnings in a secure, trusful
+                  and transparent way. That's why we bring{" "}
                   <span className="text-color-primary">chapitas</span>. Your
-                  essays, projects, code or any document will serve you as a
-                  portfolio for your future. Knowledge comes from learning,
-                  wisdom comes from applying.
+                  essays, projects, code or any document will be your portfolio
+                  for your future. Knowledge comes from learning, wisdom comes
+                  from applying.
                 </p>
               </div>
               <div
@@ -95,8 +90,8 @@ const WhatSection = ({
                 data-reveal-delay="250"
               >
                 <Image
-                  id="brain"
-                  src={require("./../../assets/images/what/brain_2.png")}
+                  src={require("./../../assets/images/what/chapitas.png")}
+                  id="chapita-img"
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -115,15 +110,15 @@ const WhatSection = ({
                 </div>
                 <h3 className="mt-0 mb-12">Shape your community</h3>
                 <p className="m-0 p-what">
-                  Has it ever happened you were reading something that was
-                  mind-blowing and you didn't have the chance to share it? We
-                  could change that. It’s time for a platform where readers can
-                  connect with each other, learn and grow together. You can form
-                  your own community and create contests, raffles and give
-                  special <span className="text-color-primary">chapitas</span>{" "}
-                  for the winners. These chapitas can be interchangeable for the
-                  books you where hoping to read and didn’t have the chance to
-                  buy.
+                  Did you ever read something which was mind-blowing and didn't
+                  have the chance to share it? We want every person to take
+                  action on their knowledge. It's time for a platform where
+                  readers can connect between them, learn and grow together. You
+                  can take part in your own community and create contests,
+                  raffles and give special{" "}
+                  <span className="text-color-primary">chapitas</span> for the
+                  winners. These chapitas can be interchangeable for the books
+                  you where hoping to read and didn't have the chance to buy.
                 </p>
               </div>
               <div
@@ -135,7 +130,8 @@ const WhatSection = ({
                 data-reveal-delay="250"
               >
                 <Image
-                  src={require("./../../assets/images/what/dao_2.png")}
+                  src={require("./../../assets/images/what/community_w.png")}
+                  id="community-img"
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -170,12 +166,13 @@ const WhatSection = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
+                width="50%"
               >
                 <Image
-                  src={require("./../../assets/images/what/dao.png")}
+                  src={require("./../../assets/images/what/authors.png")}
+                  id="authors-img"
                   alt="Features split 03"
-                  width={528}
-                  height="80%"
+                  width="50%"
                 />
               </div>
             </div>

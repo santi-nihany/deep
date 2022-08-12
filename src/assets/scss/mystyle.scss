@@ -103,7 +103,7 @@ p{
 }
 
 /* What Section*/
-#brain{
+#chapita-img, #community-img, #authors-img {
     width: 58%;
     height: fit-content;
     margin-left: 6rem;
@@ -112,6 +112,10 @@ p{
         margin-left: 0;
         margin: auto;
     }
+}
+
+#authors-img{
+    width: 66%;
 }
 
 .p-what{

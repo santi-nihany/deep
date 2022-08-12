@@ -49,7 +49,11 @@ const HowSection = ({
     <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <SectionHeader
+            data={sectionHeader}
+            className="center-content"
+            id="how"
+          />
           <div className={tilesClasses}>
             <div
               className="tiles-item reveal-from-right"
@@ -61,7 +65,7 @@ const HowSection = ({
                 <p className="text-sm mb-0">
                   — We want our platform to function as a expression of what the
                   community of readers needs. That mission will succeed thanks
-                  to blockchain. Forming a DAO, the reader’s will choose what is
+                  to blockchain. Creating a DAO, the readers will choose what is
                   best for the platform.
                 </p>
               </div>
@@ -89,8 +93,8 @@ const HowSection = ({
                 <div className="center-content">Decentralized funding</div>
                 <div className="testimonial-item-footer text-xs mt-8 mb-0 has-top-divider"></div>
                 <p className="text-sm mb-0">
-                  — As a DAO, we will give the opportunity to readers to vote
-                  for their favorite authors in a decentralized environment. We
+                  — As a DAO, we will give readers the opportunity to vote for
+                  their favourite authors in a decentralized environment. We
                   don’t care about your nationality, name or genre.{" "}
                 </p>
               </div>

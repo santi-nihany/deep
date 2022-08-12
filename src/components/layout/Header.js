@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import Logo from "./partials/Logo";
 import { useMediaQuery } from "react-responsive";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const propTypes = {
   navPosition: PropTypes.string,
